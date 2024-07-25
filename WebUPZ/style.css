@@ -1,0 +1,562 @@
+/*Home*/
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Poppins:ital,wght@1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  overflow-x: hidden;
+}
+body {
+  background: linear-gradient(90deg, #e48f45 0%, #6b240c 100%);
+  position: relative;
+  z-index: -9999;
+}
+main {
+  height: calc(100% - 100vh);
+  position: relative;
+  z-index: -999;
+}
+
+.rumah {
+  /* background-color: #d0a26f; */
+  background: rgba(208, 162, 111, 0.4);
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  z-index: 9999;
+}
+.navbar {
+  padding: 0;
+  padding-right: 2rem;
+  display: flex;
+  justify-content: start;
+  gap: 22vw;
+}
+#navbar-nav a {
+  transition: 0.3s ease;
+}
+#navbar-nav a:hover {
+  background-color: #6b240c;
+  padding: 10px;
+  border-radius: 15px;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+i {
+  float: left;
+}
+
+.bar {
+  height: 15vh;
+  width: 15vw;
+}
+.bar img {
+  height: 15vh;
+}
+.bar svg {
+  height: 35px;
+  width: 35px;
+}
+
+#bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#navbar-nav {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+#navbar-nav a {
+  font-family: inter;
+  text-decoration: none;
+  color: #000000;
+}
+
+.futu1 {
+  width: 100%;
+  height: 100vh;
+  background-color: #d0a26f;
+  padding-top: 15vh;
+  object-fit: cover;
+}
+
+/*Tentang*/
+#about {
+  padding-top: 15vh;
+}
+
+.aboutSection {
+  background-image: linear-gradient(to right, #b99470, #ded0b6);
+  position: relative;
+  top: -15vh;
+  z-index: -1;
+}
+.bout {
+  background-color: #d0a26f;
+  height: 10vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bout p {
+  font-family: inter;
+  text-decoration: none;
+  color: #000000;
+  margin: 0;
+}
+
+.aboutContent {
+  display: flex;
+  height: 90vh;
+}
+.aboutImg,
+.aboutText {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50vw;
+}
+
+.aboutImg img,
+.textItem {
+  object-fit: cover;
+  height: 70vh;
+  width: 45vw;
+  text-align: justify;
+  font-family: "poppins";
+}
+
+/*Menu*/
+#menu {
+  padding-top: 15vh;
+}
+
+.menuSection {
+  position: relative;
+  top: -30vh;
+  background-image: linear-gradient(to right, #e48f45, #6b240c);
+  z-index: -2;
+}
+.enu {
+  background-color: #d0a26f;
+  height: 10vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.enu p {
+  font-family: inter;
+  text-decoration: none;
+  margin: 0;
+  color: #000000;
+}
+#carouselExampleIndicators {
+  height: 70vh;
+  width: 70vw;
+  margin: 0 auto;
+}
+.carousel-item img {
+  width: 70vw;
+}
+#carouselExampleIndicators {
+  height: fit-content;
+}
+/* .utama {
+  
+} */
+
+/*kontak*/
+#contact {
+  padding-top: 15vh;
+}
+
+.contactSection {
+  background: url(img/foto3.jpg);
+  position: relative;
+  top: -45vh;
+  z-index: -3;
+}
+.tak {
+  background-color: #d0a26f;
+  height: 10vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tak p {
+  font-family: inter;
+  text-decoration: none;
+  margin: 0;
+  color: #000000;
+}
+
+.contactContent {
+  height: 90vh;
+  display: flex;
+
+  background-size: cover;
+  background-position: center;
+}
+.contactMaps,
+.contactAddress {
+  width: 50vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contactMaps iframe,
+.address form {
+  width: 45vw;
+  height: 70vh;
+}
+.address form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.addressLogo,
+.addressText,
+.addressSocmed {
+  height: 15vh;
+  width: 45vw;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 2rem;
+  background-color: #b99470;
+}
+.addressButton {
+  height: 10vh;
+  width: 15vw;
+  background-color: #b99470;
+  border: none;
+  border-radius: 1rem;
+  transition: ease 200ms;
+}
+.addressButton:hover {
+  background-color: #6b240c;
+}
+
+.addressLogo svg,
+.addressText svg,
+.addressSocmed svg {
+  margin: 2rem;
+}
+
+.addressLogo input,
+.addressText input,
+.addressSocmed input {
+  padding: 2rem;
+  width: 100%;
+  border: none;
+  margin-right: 2rem;
+}
+
+/* galeri */
+#gallery {
+  padding-top: 15vh;
+}
+
+.gallerySection {
+  background: linear-gradient(90deg, #e48f45 0%, #6b240c 100%);
+  position: relative;
+  top: -60vh;
+  z-index: -4;
+}
+.galleryTittle {
+  background-color: #d0a26f;
+  height: 10vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.galleryTittle p {
+  font-family: inter;
+  text-decoration: none;
+  margin: 0;
+  color: #000000;
+}
+/* .galleryContent {
+} */
+.contentImage {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 3rem 0;
+}
+.contentImage img {
+  width: 17vw;
+  object-fit: cover;
+}
+.galleryVideo {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.galleryVideo iframe {
+  width: 560px;
+  height: 315px;
+}
+.galleryAudio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 0;
+}
+
+.teamImage {
+  display: flex;
+  gap: 3rem;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 3rem 0;
+}
+
+.teamImage img {
+  width: 17vw;
+  aspect-ratio: 3/4;
+  object-fit: cover;
+  border-radius: 50px;
+}
+.teamName {
+  display: flex;
+  width: 20vw;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.teamName h2 {
+  font-size: 18px;
+  font-family: "inter";
+  padding-top: 1rem;
+  text-align: center;
+}
+
+/* Footer */
+.footerSection {
+  position: relative;
+  height: 20vh;
+  background: #d0a26f;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footerIcon img {
+  height: 5rem;
+  margin: 2rem;
+  transition: ease-in-out 200ms;
+}
+.footerIcon img:hover {
+  transform: scale(1.2);
+}
+
+@media screen and (max-width: 768px) {
+  .textItem p,
+  .textItem ul,
+  .textItem li {
+    font-size: 14px;
+  }
+  .textItem h4 {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 560px) {
+  .futu1 {
+    padding-top: 10vh;
+  }
+  #navbar-nav {
+    gap: 1rem;
+  }
+  #navbar-nav a {
+    font-size: 10px;
+  }
+  .bar {
+    height: 10vh;
+    width: 10vw;
+  }
+  .bar img {
+    height: 10vh;
+  }
+  #about {
+    padding-top: 10vh;
+  }
+  .aboutSection {
+    position: relative;
+    top: -10vh;
+    z-index: -1;
+  }
+  #menu {
+    padding-top: 10vh;
+  }
+  .menuSection {
+    position: relative;
+    top: -20vh;
+    z-index: -2;
+  }
+  #contact {
+    padding-top: 10vh;
+  }
+  .contactSection {
+    position: relative;
+    top: -30vh;
+    z-index: -3;
+  }
+  #gallery {
+    padding-top: 10vh;
+  }
+  .gallerySection {
+    position: relative;
+    top: -40vh;
+    z-index: -4;
+  }
+}
+@media screen and (max-width: 426px) {
+  .navbar {
+    padding: 0;
+    gap: 16vw;
+  }
+  #navbar-nav a {
+    font-size: 10px;
+  }
+  .aboutContent {
+    height: fit-content;
+    flex-direction: column;
+    gap: 3rem;
+    padding: 3rem 0;
+  }
+  .aboutImg,
+  .aboutText {
+    width: 100vw;
+  }
+  .aboutImg img {
+    width: 80vw;
+    height: 50vw;
+  }
+  .textItem {
+    width: 80vw;
+    height: fit-content;
+  }
+
+  .textItem p,
+  .textItem li {
+    font-size: 12px;
+  }
+  .contactContent {
+    height: fit-content;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    padding: 3rem 0;
+  }
+  .contactMaps,
+  .contactAddress {
+    width: 100vw;
+  }
+  .contactMaps iframe {
+    width: 80vw;
+    height: 50vh;
+  }
+  .addressLogo,
+  .addressText,
+  .addressSocmed {
+    width: 80vw;
+  }
+  .imageScroller {
+    width: 100vw;
+    overflow: hidden;
+    overflow-x: scroll;
+  }
+  .contentImage {
+    width: fit-content;
+    padding: 3rem;
+    gap: 3rem;
+  }
+  .contentImage img {
+    width: 80vw;
+  }
+  .addressButton {
+    width: 40vw;
+  }
+  .teamImage {
+    flex-direction: column;
+    align-items: center;
+  }
+  .teamName {
+    width: 80vw;
+  }
+  .teamImage img {
+    width: 40vw;
+  }
+  .teamName h2 {
+    font-size: 18px;
+  }
+  .footerSection p {
+    text-align: center;
+  }
+  .footerIcon img {
+    height: 3rem;
+    margin: 1rem;
+    transition: ease-in-out 200ms;
+  }
+  .footerIcon img:hover {
+    transform: scale(1.2);
+  }
+}
+@media screen and (max-width: 350px) {
+  .navbar {
+    gap: 12vw;
+  }
+  #navbar-nav a {
+    font-size: 8px;
+  }
+}
+
+
+
+/* set-up 
+tinggi kotak 90vh
+isi kontak 2
+lebar isi kontak 50vw
+tinggi 90vh (mengikuti tinggi kontak)
+isi kontak 1 map (contactMaps)
+isi kontak 2 text (contactText)
+tinggi maps 70vh
+lebar maps 45vw
+isi kontak 2 =
+- logo
+- alamat
+- sosmed
+  isi sosmed =
+    - instagram
+    - tiktok
+    - whatsapp
+ */
